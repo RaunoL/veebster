@@ -158,6 +158,9 @@ button.btn:hover{
     }
   }
   @media(max-width:${props=> props.theme.breakpoints.s}){
+    html{
+      font-size: 12px
+    }
     .container{
       width: 90%;
       margin: 0 5%;

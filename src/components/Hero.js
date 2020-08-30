@@ -2,19 +2,24 @@ import React from 'react'
 import styled from 'styled-components'
 import Typewriter from 'typewriter-effect';
 
-const HeroSection = styled.section({
-    width: "100vw",
-    height: "100vh",
-    background: `url(${require("../assets/hero.jpg")})  no-repeat  center`,
-    backgroundSize: "cover",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    flexFlow: "column"
-})
+
+const HeroSection = styled.section`
+width: 100vw;
+height: 100vh;
+background: url(${require("../assets/hero.jpg")}) no-repeat center;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: column;
+@media(max-width: ${props =>props.theme.breakpoints.m}){
+    background: ${props => props.theme.colors.background}
+}
+`
 const Title = styled.h1({
     textAlign: "center",
-    margin: "0px"
+    margin: "0px",
+    paddingTop:"100px"
 })
 const TypeWriterText = styled.h5({
 
@@ -29,7 +34,7 @@ const StyledIcon = styled.i({
 
 function Hero() {
 
-    
+
     return (
         <HeroSection>
             <Title>Veebster</Title>

@@ -29,7 +29,7 @@ function FrontPage() {
             <Portfolio/>
             <Services/>
             <Maintainance/>
-            <Contact/>
+            {/* <Contact/> */}
             <Footer/>
         </Wrapper>
 

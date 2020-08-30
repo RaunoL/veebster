@@ -1,7 +1,6 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styled from 'styled-components'
 import Title from './elements/Title'
-
 const StyledSection = styled.section({})
     const ContactContent = styled.div`
         display: flex;
@@ -47,7 +46,6 @@ const StyledSection = styled.section({})
         padding: "10px 60px",
     })
 function Contact() {
-    
     return (
         <StyledSection>
             <Title name={"Kontakt"} />
@@ -60,10 +58,10 @@ function Contact() {
                     <StyledButton className={"btn"}>Saada</StyledButton>
                 </StyledForm>
                 <StyledContacts>
-                    <h6>Meie Email</h6>
-                    <a>info@veebster.ee</a>
-                    <h6>Meie telefon</h6>
-                    <a>+372 5822 6840</a>
+                    <h6>Minu Email</h6>
+                    <p>info@veebster.ee</p>
+                    <h6>Minu telefon</h6>
+                    <p>+372 5822 6840</p>
                 </StyledContacts>
             </ContactContent>
         </StyledSection>
